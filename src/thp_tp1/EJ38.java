@@ -26,6 +26,7 @@ public class EJ38 {
 			
 			contadorIntentos++;
 		}while((usuarioX != USUARIO && passX != PASSWRD) || contadorIntentos != FIN);//contador no parece cortar ingreso de datos
+		
 
 	}
 
