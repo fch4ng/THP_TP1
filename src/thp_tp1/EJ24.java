@@ -22,11 +22,13 @@ public class EJ24 {
 		}while(num1 >= num2);
 		
 		for(i = num1; i <= num2; num1++) {
-			System.out.println(i++);
+			System.out.print(i++);
 			}
 		
-		for(i = num1+1; i <= num1-1; num1++) {//no sale la segunda cuenta
-			System.out.println(i++);
+		System.out.println();
+		
+		for(i = num1+1; i <= num2-1; num1++) {//no sale la segunda cuenta
+			System.out.print(i++);
 			}
 
 	}
