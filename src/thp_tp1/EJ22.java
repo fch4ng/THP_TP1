@@ -10,12 +10,14 @@ public class EJ22 {
 		
 		int i;
 		
-		for(i = 0; i < 6; i++) {
-			System.out.println(i);
+		for(i = 1; i < 6; i++) {
+			System.out.print(i);
 		}
 		
+		System.out.println();
+		
 		for(i = 5; i > 0; i--) {
-			System.out.println(i);
+			System.out.print(i);
 		}
 
 	}
