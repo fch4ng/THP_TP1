@@ -10,6 +10,7 @@ public class EJ26 {
 		
 		int numX;
 		int i;
+		
 		System.out.println("Ingresa un numero");
 		numX = Integer.parseInt(input.next());
 		

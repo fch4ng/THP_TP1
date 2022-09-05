@@ -17,13 +17,15 @@ public class EJ28 {
 		System.out.println("Ingresa un numero entero");
 		numX = Integer.parseInt(input.next());
 		
-		for(i = 0; i < numX + 1; i++) {
+		for(i = 0; i < numX; i++) { //no entiendo porque no funciona el contador 
 			System.out.println("Ingresa el numero");
 			numIngresado = Integer.parseInt(input.next());
 			
+			i++;
+			
 			if(numIngresado > numMax) {
 				numMax = numIngresado;
-				posNumMax = i++;
+				posNumMax = i;
 			}
 		}
 		

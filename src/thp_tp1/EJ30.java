@@ -30,22 +30,22 @@ public class EJ30 {
 		operacion = input.next().charAt(0);
 		
 		switch (operacion) {
-		case SUMA: resultado = num1 + num2; 
+			case SUMA: resultado = num1 + num2; 
 					System.out.println("Resultado de la suma es " + resultado); 
-			break;
-		case RESTA: resultado = num1 - num2; 
-		System.out.println("Resultado de la resta es " + resultado); 
-			break;
-		case DIV: if(0 != num2) {
+					break;
+			case RESTA: resultado = num1 - num2; 
+					System.out.println("Resultado de la resta es " + resultado); 
+					break;
+			case DIV: if(0 != num2) {
 					resultado = num1 / num2; 
 					System.out.println("Resultado de la division es " + resultado); 
 					}else {
 						System.out.println("ERROR");
 					}
-			break;
-		case MULTI: resultado = num1 * num2; 
-		System.out.println("Resultado de la multiplicacion es " + resultado); 
-			break;
+				break;
+			case MULTI: resultado = num1 * num2; 
+					System.out.println("Resultado de la multiplicacion es " + resultado); 
+					break;
 		}
 		
 		}while(operacion != 'F');

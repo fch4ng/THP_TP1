@@ -21,13 +21,13 @@ public class EJ31 {
 			
 			if(edad != EDADVALIDA) {
 				System.out.println("Edad valida, desea continuar 'S' Si, 'N' No");
-				continuar = input.next().charAt(0);
+				continuar = input.next().toUpperCase().charAt(0);
 			}else {
 				System.out.println("Edad no valida, desea continuar 'S' Si, 'N' No");
-				continuar = input.next().charAt(0);
+				continuar = input.next().toUpperCase().charAt(0);
 			}
 			
-		}while(continuar == CONTMAYUS || continuar == CONTMINUS);//no sale del ciclo
+		}while(continuar != CONTMAYUS || continuar != CONTMINUS);//no sale del ciclo
 		
 	}
 
