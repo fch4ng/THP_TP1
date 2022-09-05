@@ -16,7 +16,7 @@ public class EJ14 {
 		System.out.println("Ingrese edad");
 		edad = Integer.parseInt(input.next());
 		
-		System.out.println("Ingrese edad");
+		System.out.println("Ingrese altura");
 		altura = Double.parseDouble(input.next());
 		
 		if(edad >= EDADMINIMA && altura > ALTURAMINIMA) {

@@ -23,7 +23,7 @@ public class EJ19 {
 				System.out.println(numX + " es de un solo digito " + esUnSoloDigito + " es impar " + esImpar + " por ende pertenece a ambos conjuntos " + estaEnAmbos);
 			}
 		}else if (0 == numX % 2) {
-			System.out.println(numX + " no es de un solo digito ni es impar " + noEstaEnNinguno);
+			System.out.println(numX + " no es de un solo digito ni es impar por ende no esta en ningun conjunto " + noEstaEnNinguno);
 		}else {
 			System.out.println(numX + " es impar " + esImpar);
 		}

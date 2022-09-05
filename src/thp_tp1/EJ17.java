@@ -20,7 +20,7 @@ public class EJ17 {
 	
 	if(MAXEDAD > edad && MINEDAD < edad) { 
 		System.out.println("Ingrese genero (opciones disponibles 'M' Hombre 'F' Mujer)");
-		genero = input.next().charAt(0);
+		genero = input.next().toUpperCase().charAt(0);
 		
 		if((genero == 'M') || (genero == 'F')) {
 			
