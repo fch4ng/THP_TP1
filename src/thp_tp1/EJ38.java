@@ -25,7 +25,7 @@ public class EJ38 {
 			
 			contadorIntentos++;
 			
-		}while(!(usuarioX.equals(USUARIO) && passX.equals(PASSWRD)) && contadorIntentos != FIN);//contador no parece cortar ingreso de datos
+		}while(!(usuarioX.equals(USUARIO) && passX.equals(PASSWRD)) && contadorIntentos != FIN);
 		
 		if(usuarioX.equals(USUARIO) && passX.equals(PASSWRD)) {
 			System.out.println("Acceso concedido");
