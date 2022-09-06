@@ -20,13 +20,18 @@ public class EJ38 {
 		do {
 			System.out.println("Ingresa usuario");
 			usuarioX = input.nextLine();
-			input.nextLine();
-			System.out.println("Ingresa contraseña");
+			System.out.println("Ingresa contraseï¿½a");
 			passX = input.nextLine();
 			
 			contadorIntentos++;
-		}while((usuarioX != USUARIO && passX != PASSWRD) || contadorIntentos != FIN);//contador no parece cortar ingreso de datos
+			
+		}while(!(usuarioX.equals(USUARIO) && passX.equals(PASSWRD)) && contadorIntentos != FIN);//contador no parece cortar ingreso de datos
 		
+		if(usuarioX.equals(USUARIO) && passX.equals(PASSWRD)) {
+			System.out.println("Acceso concedido");
+		}else {
+			System.out.println("Se ha bloqueado la cuenta");
+		}
 
 	}
 
