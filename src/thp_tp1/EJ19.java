@@ -17,7 +17,7 @@ public class EJ19 {
 		System.out.println("Ingrese un numero entero");
 		numX = Integer.parseInt(input.next());
 		
-		if(10 > numX && 0 < numX) {//no se porque se traba aqui?
+		if(10 > numX && 0 < numX) {
 			
 			if(0 == numX % 2) {
 				System.out.println(numX + " es de un solo digito " + esUnSoloDigito + " es impar " + esImpar + " por ende pertenece a ambos conjuntos " + estaEnAmbos);

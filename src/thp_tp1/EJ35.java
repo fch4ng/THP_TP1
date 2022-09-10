@@ -11,25 +11,25 @@ public class EJ35 {
 		String nombreEdadMinima = " ";
 		String nom;
 		   int edad;
-		
-		int edadMinima = 100;
-		
-		final String FIN = "*";
+		   int edadMinima        = 100;
+  final String FIN               = "*";
 		
 		do {
 			System.out.println("Ingrese nombre (ingrese '*' para finalizar)");
 			nom = input.nextLine();
+			
 			input.nextLine();
+			
 			System.out.println("Ingrese edad");
 			edad = Integer.parseInt(input.next());
 			
-			if(edad < edadMinima) {
-				nombreEdadMinima = nom;
-				      edadMinima = edad;
+				if(edad < edadMinima) {
+					nombreEdadMinima = nom;
+					      edadMinima = edad;
 			}
-		}while(nom != FIN); // como hago que corte bien el ciclo, proba uso de While
+		}while(!(nom.equals(FIN))); // como hago que corte bien el ciclo, proba uso de While
 		
-		System.out.println("La persona mas joven es " + nombreEdadMinima + " de " + edadMinima + " años de edad");
+		System.out.println("La persona mas joven es " + nombreEdadMinima + " de " + edadMinima + " aï¿½os de edad");
 	}
 
 }
