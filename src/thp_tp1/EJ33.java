@@ -10,8 +10,9 @@ public class EJ33 {
 
 		int numX;
 		
-		int numMax = 0;
-		int numMin = 0;
+		int numMax = Integer.MIN_VALUE;
+		int numMin = Integer.MAX_VALUE;
+		
 		
 		final int FIN = 0;
 		
@@ -21,11 +22,11 @@ public class EJ33 {
 			
 			if(numX > numMax) {
 				numMax = numX;
-			}else if((numX < numMax) && (numX < numMin)) {
+			}else if( (numX < numMin)) {//inclui que numMin sea distinto de cero
 				numMin = numX;
 			}
 			
-		}while(numX != FIN);// como hago para que 0 no me lo cuente como numerominimo? 
+		}while(numX != FIN);
 		
 		System.out.println("El numero maximo es " + numMax);
 		System.out.println("El numero minimo es " + numMin);
