@@ -29,10 +29,10 @@ public class EJ20 {
 		
 		switch (operacion) {
 		case SUMA: resultado = num1 + num2; 
-					System.out.println("Resultado de la suma es " + resultado); 
+				System.out.println("Resultado de la suma es " + resultado); 
 			break;
 		case RESTA: resultado = num1 - num2; 
-		System.out.println("Resultado de la resta es " + resultado); 
+				System.out.println("Resultado de la resta es " + resultado); 
 			break;
 		case DIV: if(0 != num2) {
 					resultado = num1 / num2; 
@@ -42,7 +42,7 @@ public class EJ20 {
 					}
 			break;
 		case MULTI: resultado = num1 * num2; 
-		System.out.println("Resultado de la multiplicacion es " + resultado); 
+				System.out.println("Resultado de la multiplicacion es " + resultado); 
 			break;
 		}
 	}

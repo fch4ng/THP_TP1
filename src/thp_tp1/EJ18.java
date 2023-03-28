@@ -27,7 +27,7 @@ public class EJ18 {
 		}else if(CERO == num2 % num1) {
 			System.out.println(num2 + " es divisible por " + num1);
 		}else {
-			System.out.println(num2 + " es divisible por " + num1);
+			System.out.println(num2 + " no es divisible por " + num1);
 		}
 	}
 

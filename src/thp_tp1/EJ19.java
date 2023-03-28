@@ -1,4 +1,4 @@
-package thp_tp1;
+package thp_tp1;//actualiza con nuevo pseudo codigo
 
 import java.util.Scanner;
 
