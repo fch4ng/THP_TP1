@@ -21,11 +21,12 @@ public class EJ25 {
 		System.out.println("Ingresa el alto");
 		alto = Integer.parseInt(input.nextLine());
 		
-		for(i = 0; i <= alto; i++) {//revisar video en clase de como resolver line break
+		for(i = 0; i <= alto; i++) {
 			
 			for(k = 0; k <= ancho; k++) {
 				System.out.print("x");
 			}
+			System.out.print("\n");
 		}
 	}
 
