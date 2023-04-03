@@ -10,27 +10,28 @@ public class EJ24 {
 		
 		int num1;
 		int num2;
-		int i;
+		//int i;
+		
+		System.out.println("Ingrese el primer numero");
+		num1 = Integer.parseInt(input.next());
 		
 		do {
-			System.out.println("Ingrese el primer numero");
-			num1 = Integer.parseInt(input.next());
-			
+						
 			System.out.println("Ingrese el segundo numero");
 			num2 = Integer.parseInt(input.next());
 			
-		}while(num1 >= num2);
+		}while(num1 > num2);
 		
-		for(i = num1; i <= num2; num1++) {
-			System.out.print(i++);
+		for(int i = num1; i <= num2; i++) {
+			System.out.print(i);
+			
 			}
-		
 		System.out.println();
 		
-		for(i = num1+1; i <= num2-1; num1++) {//no sale la segunda cuenta
-			System.out.print(i++);
-			}
-
+		for(int i = num1+1; i < num2; i++) {
+			System.out.print(i);
+			}	
+		
 	}
 
 }

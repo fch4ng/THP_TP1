@@ -44,6 +44,7 @@ public class EJ20 {
 		case MULTI: resultado = num1 * num2; 
 				System.out.println("Resultado de la multiplicacion es " + resultado); 
 			break;
+		default: System.out.println("Operacion incorrecta");
 		}
 	}
 
