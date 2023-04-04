@@ -22,7 +22,7 @@ public class EJ33 {
 			
 			if(numX > numMax) {
 				numMax = numX;
-			}else if( (numX < numMin)) {//inclui que numMin sea distinto de cero
+			}else if((numX < numMin) && numX != 0) {//inclui que numMin sea distinto de cero
 				numMin = numX;
 			}
 			
