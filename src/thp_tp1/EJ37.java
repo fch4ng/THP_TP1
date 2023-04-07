@@ -18,10 +18,18 @@ public class EJ37 {
 		do {
 			System.out.println("Ingresa monto del sueldo");
 			sueldoX = Integer.parseInt(input.next());
+						
+			if(sueldoX > 0){
+
+				contadorSueldo++;
+				acumSueldo = acumSueldo + sueldoX;
+
+			}else{
+
+				System.out.println("Todavia no se a cobrado el mes en curso");
+			}
 			
-			acumSueldo = acumSueldo + sueldoX;
-			contadorSueldo++;
-		}while(sueldoX > 0 || contadorSueldo <= FIN);//trabado tratando de encontrar porque no corta
+		}while(sueldoX > 0 && contadorSueldo < FIN);
 		
 		System.out.println("La cantidad cobrada por el empleado a la fecha es de " + acumSueldo);
 	}
