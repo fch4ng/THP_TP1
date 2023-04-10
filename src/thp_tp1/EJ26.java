@@ -17,7 +17,7 @@ public class EJ26 {
 		for(i = 0; i < numX; i++){
 			
 			if(0 != (i*3) % 5) {
-				System.out.println(i*3);//no imprime
+				System.out.println(i);
 			}
 		}
 
