@@ -8,14 +8,18 @@ public class EJ23 {
 
 	public static void main(String[] args) {
 		
+		//definir variables
 		int numX;
 		int i;
 		int resultado;
 		
+		//pedido e ingreso de numero entero
 		System.out.println("Ingrese un numero entero");
 		numX = Integer.parseInt(input.next());
 		
+		//arranque del ciclo for en 0 hasta 11 incrementando de a uno
 		for(i = 0; i < 11; i++) {
+			//muestra por pantalla ciclo de numeros
 			System.out.println(numX * i);
 		}
 	}

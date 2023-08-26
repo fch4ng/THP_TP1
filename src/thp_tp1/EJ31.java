@@ -1,4 +1,4 @@
-package thp_tp1;
+package thp_tp1;//no sale del ciclo
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package thp_tp1;
+package thp_tp1;//apuntes abajo pedido de correccion
 
 import java.util.Scanner;
 

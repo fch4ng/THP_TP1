@@ -8,13 +8,16 @@ public class EJ24 {
 
 	public static void main(String[] args) {
 		
+		//definir variables
 		int num1;
 		int num2;
-		//int i;
 		
+		
+		//pedido e ingreso de primer numero
 		System.out.println("Ingrese el primer numero");
 		num1 = Integer.parseInt(input.next());
 		
+		//iniciar ciclo do para validar que segundo numero ingresado sea mayor al primero
 		do {
 						
 			System.out.println("Ingrese el segundo numero");
@@ -22,12 +25,14 @@ public class EJ24 {
 			
 		}while(num1 > num2);
 		
+		//iniciar ciclo for en num1 hasta num2
 		for(int i = num1; i <= num2; i++) {
 			System.out.print(i);
 			
 			}
 		System.out.println();
 		
+		//iniciar ciclo for en num1 mas 1 hasta num2 menos 1
 		for(int i = num1+1; i < num2; i++) {
 			System.out.print(i);
 			}	

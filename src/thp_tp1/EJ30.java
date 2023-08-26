@@ -8,7 +8,8 @@ public class EJ30 {
 
 	public static void main(String[] args) {
 		
-		int num1;
+		//definir variables
+		 int num1;
 		 int num2;
 		 int resultado;
 		char operacion;
@@ -19,23 +20,32 @@ public class EJ30 {
 		final char DIV   = '/';
 		final char FIN   = 'F';
 		
+		//inicio de ciclo do hasta ingreso de letra F para terminar operacion
 		do {
+			
+		//pedido e ingreso de num1	
 		System.out.println("Ingrese primer numero entero");
 		num1 = Integer.parseInt(input.next());
 		
+		//pedido e ingreso de num2
 		System.out.println("Ingrese segundo numero entero");
 		num2 = Integer.parseInt(input.next());
 		
+		//pedido e ingreso de operacion
 		System.out.println("Ingrese la operacion deseada '+' suma; '-' resta; '*' multiplicacion; '/' division");
 		operacion = input.next().charAt(0);
 		
+		//switch para ejecutar operacion seleccionada
 		switch (operacion) {
+			//operacion de suma
 			case SUMA: resultado = num1 + num2; 
 					System.out.println("Resultado de la suma es " + resultado); 
 					break;
+			//operacion de resta
 			case RESTA: resultado = num1 - num2; 
 					System.out.println("Resultado de la resta es " + resultado); 
 					break;
+			//operacion de division
 			case DIV: if(0 != num2) {
 					resultado = num1 / num2; 
 					System.out.println("Resultado de la division es " + resultado); 
@@ -43,6 +53,7 @@ public class EJ30 {
 						System.out.println("ERROR");
 					}
 				break;
+			//operacion de multiplicacion
 			case MULTI: resultado = num1 * num2; 
 					System.out.println("Resultado de la multiplicacion es " + resultado); 
 					break;
@@ -50,6 +61,7 @@ public class EJ30 {
 		
 		}while(operacion != 'F');
 		
+		//muestra por pantalla que operaciones finalizadas
 		System.out.println("Operaciones ingresadas concluidas");
 
 	}

@@ -1,4 +1,4 @@
-package thp_tp1;
+package thp_tp1;// revisa el ciclo no esta cortando bien
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class EJ32 {
 			System.out.println("Ingrese nota");
 			nota = Integer.parseInt(input.next());
 			
-		}while(nota != 2 || (nota < 3 && nota > 11)); // revisa el ciclo no esta cortando bien
+		}while(nota != 2 || (nota < 3 && nota > 11)); 
 	}
 
 }
