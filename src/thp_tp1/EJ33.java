@@ -17,9 +17,9 @@ public class EJ33 {
 		
 		//iniciar ciclo do que finalizara cuando se ingrese numero 0
 		do {
-			//pedido e ingreso de nota, se aclara que se ingresa 0 para finalizar proceso
+			//pedido e ingreso de numX, se aclara que se ingresa 0 para finalizar proceso
 			System.out.println("Ingrese nota ('0' para finalizar)");
-			numX = Integer.parseInt(input.next());
+			numX = Integer.parseInt(input.nextLine());
 			
 			//condicional que compara si numX ingresado mayor a numMax
 			if(numX > numMax) {
