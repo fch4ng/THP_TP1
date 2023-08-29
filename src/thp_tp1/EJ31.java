@@ -1,4 +1,4 @@
-package thp_tp1;//no sale del ciclo
+package thp_tp1;
 
 import java.util.Scanner;
 
@@ -12,7 +12,6 @@ public class EJ31 {
 		char continuar;
 
 		final char CONTMAYUS = 'N';
-		final char CONTMINUS = 'n';
 		final int EDADVALIDA = 40;
 		
 		do {
@@ -27,7 +26,7 @@ public class EJ31 {
 				continuar = input.next().toUpperCase().charAt(0);
 			}
 			
-		}while(continuar != CONTMAYUS || continuar != CONTMINUS);//no sale del ciclo
+		}while(continuar != CONTMAYUS);
 		
 	}
 
