@@ -13,7 +13,7 @@ public class EJ39 {
 					   
 						int cantJugadores;
 					   int distanciaTiro;
-					String nombreJugador;
+					String nombreJugador = "";
 					  int acumTotalTiros;
 				   String jugadorGanador = "";
 				   
@@ -41,10 +41,10 @@ public class EJ39 {
        }while(cantJugadores < CANTIDADMINIMAJUGADORES);
        
 	       do{
+	    	   
 	    	   System.out.println("Ingresa nombre de jugador");
 	    	   nombreJugador = input.nextLine();
-	    	   input.nextLine();
-	             
+	    	   	             
 			       do {
 			    	   			    	      	   
 				           do{
@@ -54,35 +54,35 @@ public class EJ39 {
 				        	   
 				           		}while(distanciaTiro < 0);
 			    	   			    	   		    	   
-				    	   if(distanciaTiro == 0) {
-				    		   
-				    		                acum500 = acum500 + suma500;
-				    		   contadorTiroAlCentro = contadorTiroAlCentro + sumaTiroAlCentro;
-				    		   System.out.println("acum500 " + acum500);
-				    		   System.out.println("contadorTiroAlCentro " + contadorTiroAlCentro);
-				    	   }else if(distanciaTiro <= 10){
-				    		   
-				    		   acum250 = acum250 + suma250;
-				    		   System.out.println("acum250 " + acum250);
-				    	   }else if(distanciaTiro > 11 && distanciaTiro < 50) {
-				    		   
-				    		   acum100 = acum100 + suma100;
-				    		   System.out.println("acum100 " +acum100);
-				    	   }
-				    	   
-				    	   acumTotalTiros = acum500 + acum250 + acum100;
-				    	   System.out.println("acumTotalTiros " + acumTotalTiros);
-				    	   if(acumTotalTiros > puntajeGanador) {
-				    		   
-				    		   puntajeGanador = acumTotalTiros;// no se resetea el conteo cuando va al siguiente jugador
-				    		   jugadorGanador = nombreJugador; // no se guarda el nombre
-				    		   System.out.println("puntajeGanador " + puntajeGanador); 
-				    		   System.out.println("jugadorGanador " + jugadorGanador);
-				    	   }
-			    	   
-					    	   cantidadTotalTirosCentro = cantidadTotalTirosCentro + contadorTiroAlCentro;
-					    	             contadorDeTiro = contadorDeTiro + sumaTiros;
-					    	   System.out.println("contadorDeTiro " + contadorDeTiro); 			    	       	   
+						    	   if(distanciaTiro == 0) {
+						    		   
+						    		                acum500 = acum500 + suma500;
+						    		   contadorTiroAlCentro = contadorTiroAlCentro + sumaTiroAlCentro;
+						    		   System.out.println("acum500 " + acum500);
+						    		   System.out.println("contadorTiroAlCentro " + contadorTiroAlCentro);
+						    	   }else if(distanciaTiro <= 10){
+						    		   
+						    		   acum250 = acum250 + suma250;
+						    		   System.out.println("acum250 " + acum250);
+						    	   }else if(distanciaTiro > 11 && distanciaTiro < 50) {
+						    		   
+						    		   acum100 = acum100 + suma100;
+						    		   System.out.println("acum100 " +acum100);
+						    	   }
+						    	   
+						    	   acumTotalTiros = acum500 + acum250 + acum100;
+						    	   System.out.println("acumTotalTiros " + acumTotalTiros);
+						    	   if(acumTotalTiros > puntajeGanador) {
+						    		   
+						    		   puntajeGanador = acumTotalTiros;// no se resetea el conteo cuando va al siguiente jugador
+						    		   jugadorGanador = nombreJugador; // no se guarda el nombre
+						    		   System.out.println("puntajeGanador " + puntajeGanador); 
+						    		   System.out.println("jugadorGanador " + jugadorGanador);
+						    	   }
+					    	   
+							    	   cantidadTotalTirosCentro = cantidadTotalTirosCentro + contadorTiroAlCentro;
+							    	             contadorDeTiro = contadorDeTiro + sumaTiros;
+							    	   System.out.println("contadorDeTiro " + contadorDeTiro); 			    	       	   
 			       		}while(contadorDeTiro != TIROMAXIMO); //solo cicla una vez y despues se queda en loop con el segundo jugador
 	       
 			  contadorJugadores = contadorJugadores + sumaJugadores;
